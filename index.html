@@ -1550,40 +1550,6 @@
 <path d="M112.627 13.0078L109.779 15.062L113.001 14.175L112.627 13.0078Z" fill="#00B67A"/>
 </svg>
 </div>
-    <!-- Start of bodyEnd -->
-    <script>
-  document.addEventListener("click", function (e) {
-    // 1. Match all <a> tags pointing to superprofile.bio domain
-    const anchor = e.target.closest('a[href^="https://superprofile.bio/"]');
-    if (!anchor) return;
-
-    e.preventDefault(); // Stop default navigation
-
-    // 2. Get current UTM params from page
-    const qs = window.location.search;
-
-    // 3. Add referrer param
-    const ref = document.referrer;
-    const referrerParam = ref ? `referrer=${encodeURIComponent(ref)}` : "";
-
-    // 4. Construct updated URL
-    let newURL = anchor.href;
-    const hasQuery = newURL.includes("?");
-    const sep = hasQuery ? "&" : "?";
-
-    if (referrerParam) {
-      newURL += sep + referrerParam;
-    }
-
-    if (qs) {
-      const additionalSep = newURL.includes("?") ? "&" : "?";
-      newURL += additionalSep + qs.slice(1);
-    }
-
-    // 5. Redirect with added params
-    window.location.href = newURL;
-  });
-</script>
-    <!-- End of bodyEnd -->
+    
 </body>
 </html>
