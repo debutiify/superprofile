@@ -959,7 +959,7 @@
 <script>
 (function () {
   // If the page is being viewed on the Framer preview domain,
-  // inject a noindex and force the canonical to superprofile.bio
+  // inject a noindex and force the canonical to https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html
   var h = location.hostname;
 
   // Match your specific preview host and any *.framer.app / *.framer.website fallback
@@ -976,10 +976,10 @@
   robots.content = "noindex,nofollow";
   document.head.appendChild(robots);
 
-  // 2) Ensure canonical points to superprofile.bio with the same path
+  // 2) Ensure canonical points to https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html with the same path
   var canonical = document.querySelector('link[rel="canonical"]') || document.createElement("link");
   canonical.rel = "canonical";
-  canonical.href = location.href.replace(/^https?:\/\/[^/]+/, "https://superprofile.bio");
+  canonical.href = location.href.replace(/^https?:\/\/[^/]+/, "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html");
   if (!canonical.parentNode) document.head.appendChild(canonical);
 })();
 </script>
@@ -990,21 +990,21 @@
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://superprofile.bio/#organization",
+      "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html/#organization",
       "name": "SuperProfile",
-      "url": "https://superprofile.bio/",
+      "url": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
       "sameAs": [
         "https://www.linkedin.com/showcase/superprofile-for-creators/",
-        "https://www.instagram.com/superprofile.bio/",
+        "#",
         "https://www.youtube.com/@superprofile4creators/featured"
       ]
     },
     {
       "@type": "WebSite",
-      "@id": "https://superprofile.bio/#website",
-      "url": "https://superprofile.bio/",
+      "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
+      "url": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
       "name": "SuperProfile",
-      "publisher": { "@id": "https://superprofile.bio/#organization" },
+      "publisher": { "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html" },
       "potentialAction": [
         {
           "@type": "RegisterAction",
@@ -1019,45 +1019,45 @@
           "name": "Sign In",
           "target": {
             "@type": "EntryPoint",
-            "urlTemplate": "https://superprofile.bio/signin"
+            "urlTemplate": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html"
           }
         }
       ]
     },
     {
       "@type": "WebPage",
-      "@id": "https://superprofile.bio/#homepage",
-      "url": "https://superprofile.bio/",
+      "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
+      "url": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
       "name": "SuperProfile - Complete Toolkit for Creators",
       "description": "SuperProfile is a SaaS toolkit for creators to grow, monetize, and manage communities with AutoDM, SuperLinks, courses, subscriptions, and events."
     },
     {
       "@type": "Product",
-      "@id": "https://superprofile.bio/#product",
+      "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
       "name": "SuperProfile SaaS Platform",
       "description": "SuperProfile provides creators with SaaS tools like AutoDM, SuperLinks, Lead Magnets, Courses, Subscriptions, Events, and Coaching.",
-      "brand": { "@id": "https://superprofile.bio/#organization" },
+      "brand": { "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html" },
       "offers": {
         "@type": "Offer",
-        "url": "https://superprofile.bio/pricing",
+        "url": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
         "priceCurrency": "USD"
       }
     },
     {
       "@type": "WebPage",
-      "@id": "https://superprofile.bio/auto-dm#usecase",
-      "url": "https://superprofile.bio/auto-dm",
+      "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
+      "url": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
       "name": "AutoDM - Automate Instagram Messaging",
       "description": "SuperProfile AutoDM lets creators automate and scale Instagram messaging workflows to engage with their audience instantly.",
-      "isPartOf": { "@id": "https://superprofile.bio/#website" }
+      "isPartOf": { "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html" }
     },
     {
       "@type": "WebPage",
-      "@id": "https://superprofile.bio/pricing#pricing",
-      "url": "https://superprofile.bio/pricing",
+      "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
+      "url": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
       "name": "Pricing - SuperProfile",
       "description": "Choose a pricing plan for SuperProfile SaaS platform with flexible options for creators of all sizes.",
-      "isPartOf": { "@id": "https://superprofile.bio/#website" }
+      "isPartOf": { "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html" }
     },
     {
       "@type": "WebPage",
@@ -1065,11 +1065,11 @@
       "url": "https://help.cosmofeed.com/portal/en/kb",
       "name": "SuperProfile Help Center",
       "description": "Find documentation, FAQs, and tutorials for using SuperProfile SaaS platform.",
-      "isPartOf": { "@id": "https://superprofile.bio/#website" }
+      "isPartOf": { "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html" }
     },
     {
       "@type": "FAQPage",
-      "@id": "https://superprofile.bio/#faq",
+      "@id": "https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html",
       "mainEntity": [
         {
           "@type": "Question",
@@ -1468,7 +1468,7 @@
     <script>
   document.addEventListener("click", function (e) {
     // 1. Match all <a> tags pointing to superprofile.bio domain
-    const anchor = e.target.closest('a[href^="https://superprofile.bio/"]');
+    const anchor = e.target.closest('a[href^="https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html"]');
     if (!anchor) return;
 
     e.preventDefault(); // Stop default navigation
@@ -1501,6 +1501,7 @@
     <!-- End of bodyEnd -->
 </body>
 </html>
+
 
 
 
